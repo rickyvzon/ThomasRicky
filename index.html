@@ -3,42 +3,35 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    
-body, html {
-    height: 100%;
-    margin: 0;
-}
-    
-.bg {
-    /* The image used */
-    background-image: url("https://i.pinimg.com/originals/5d/d8/ba/5dd8bac90f2d0aa5f9f8712c4ea2167e.jpg");
-    /* Full height */
-    height: 100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-    
-</style>
-</head>
-<body>
-          
-<div class="bg"></div>
-    
-</body>
-</html>
-
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
 
 .centered {
     position: absolute;
@@ -46,10 +39,21 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-    
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
 <div class="container">
-<div class="centered">Centered</div>
+  <img src="https://i.pinimg.com/originals/5d/d8/ba/5dd8bac90f2d0aa5f9f8712c4ea2167e.jpg" alt="Background" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
 </div>
 
 </body>
-</html>
+</html> 
